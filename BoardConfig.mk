@@ -20,17 +20,14 @@
 # definition file).
 #
 
-# Inherit from common a5ultexx
--include device/samsung/a5-common/BoardConfigCommon.mk
+# Inherit from common gt58wifixx
+-include device/samsung/gt58-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/a5ultexx/BoardConfigVendor.mk
+-include vendor/samsung/gt58wifixx/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a5ulte,a5ultexx,SM-A500FU
+TARGET_OTA_ASSERT_DEVICE := gt58wifi,gt58wifixx,SM-T350
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogen_a5ultexx_defconfig
-
-# TWRP
-DEVICE_RESOLUTION := 720x1280
+TARGET_KERNEL_CONFIG := gt58wifi_defconfig

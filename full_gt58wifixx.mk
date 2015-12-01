@@ -13,14 +13,14 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from a5ultexx device
-$(call inherit-product, device/samsung/a5ultexx/device.mk)
+# Inherit from gt58wifixx device
+$(call inherit-product, device/samsung/gt58wifixx/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_a5ultexx
-PRODUCT_DEVICE := a5ultexx
+PRODUCT_NAME := full_gt58wifixx
+PRODUCT_DEVICE := gt58wifixx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-A500FU
+PRODUCT_MODEL := SM-T350
