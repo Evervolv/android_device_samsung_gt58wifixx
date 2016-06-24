@@ -20,9 +20,6 @@ $(call inherit-product-if-exists, vendor/samsung/gt58wifixx/gt58wifixx-vendor.mk
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58wifixx/overlay
-
 # Inherit from gt58-common
 $(call inherit-product, device/samsung/gt58-common/common.mk)
 
