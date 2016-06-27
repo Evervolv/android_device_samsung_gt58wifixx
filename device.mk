@@ -20,6 +20,35 @@ $(call inherit-product-if-exists, vendor/samsung/gt58wifixx/gt58wifixx-vendor.mk
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+# Device overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58wifixx/overlay
+
+# Audio
+PRODUCT_COPY_FILES += \
+    device/samsung/gt58wifixx/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
+    device/samsung/gt58wifixx/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
+    device/samsung/gt58wifixx/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
+    device/samsung/gt58wifixx/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
+    device/samsung/gt58wifixx/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
+    device/samsung/gt58wifixx/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
+    device/samsung/gt58wifixx/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
+    device/samsung/gt58wifixx/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/samsung/gt58wifixx/audio/Tfa9895.cnt:system/etc/Tfa9895.cnt
+
+# Audio
+PRODUCT_COPY_FILES += \
+    device/samsung/gt58wifixx/audio/audio_effects.conf:system/etc/audio_effects.conf \
+    device/samsung/gt58wifixx/audio/audio_policy.conf:system/etc/audio_policy.conf
+
+# GPS
+PRODUCT_COPY_FILES += \
+    device/samsung/gt58wifixx/configs/gps.conf:system/etc/gps.conf
+
+# Media
+PRODUCT_COPY_FILES += \
+    device/samsung/gt58wifixx/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    device/samsung/gt58wifixx/configs/media_profiles.xml:system/etc/media_profiles.xml
+
 # Inherit from gt58-common
 $(call inherit-product, device/samsung/gt58-common/common.mk)
 
