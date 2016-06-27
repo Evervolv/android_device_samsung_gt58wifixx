@@ -50,5 +50,5 @@ PRODUCT_COPY_FILES += \
     device/samsung/gt58wifixx/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Inherit from gt58-common
-$(call inherit-product, device/samsung/gt58-common/common.mk)
+$(call inherit-product, device/samsung/gt5-common/common.mk)
 

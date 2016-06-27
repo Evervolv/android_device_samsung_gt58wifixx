@@ -20,8 +20,8 @@
 # definition file).
 #
 
-# Inherit from common gt58wifixx
--include device/samsung/gt58-common/BoardConfigCommon.mk
+# Inherit from common
+-include device/samsung/gt5-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
 -include vendor/samsung/gt58wifixx/BoardConfigVendor.mk
