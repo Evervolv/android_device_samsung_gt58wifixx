@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/gt58wifixx/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
     device/samsung/gt58wifixx/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
     device/samsung/gt58wifixx/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
-    device/samsung/gt58wifixx/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
     device/samsung/gt58wifixx/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
     device/samsung/gt58wifixx/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     device/samsung/gt58wifixx/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
