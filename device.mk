@@ -16,10 +16,6 @@
 # Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/gt58wifixx/gt58wifixx-vendor.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
-
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58wifixx/overlay
 
