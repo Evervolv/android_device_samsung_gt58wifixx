@@ -36,7 +36,13 @@ PRODUCT_DEVICE := gt58wifixx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-T350
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=gt58wifixx TARGET_DEVICE=gt58wifi
 
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := sedo
+
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=gt58wifi \
+    PRODUCT_NAME=gt58wifixx \
+    BUILD_FINGERPRINT=samsung/gt58wifixx/gt58wifi:6.0.1/MMB29M/T350XXU1BPE3:user/release-keys \
+    PRIVATE_BUILD_DESC="gt58wifixx-user 6.0.1 MMB29M T350XXU1BPE3 release-keys"
