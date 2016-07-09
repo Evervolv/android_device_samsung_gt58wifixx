@@ -48,6 +48,11 @@ PRODUCT_COPY_FILES += \
     device/samsung/gt58wifixx/configs/media_codecs.xml:system/etc/media_codecs.xml \
     device/samsung/gt58wifixx/configs/media_profiles.xml:system/etc/media_profiles.xml
 
+# Ril
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.carrier=wifi-only \
+    ro.radio.noril=1
+
 # Inherit from gt58-common
 $(call inherit-product, device/samsung/gt5-common/common.mk)
 
