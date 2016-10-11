@@ -21,7 +21,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58wifixx/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/samsung/gt58wifixx/audio/audio_policy.conf:system/etc/audio_policy.conf \
     device/samsung/gt58wifixx/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     device/samsung/gt58wifixx/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/samsung/gt58wifixx/audio/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
@@ -33,15 +32,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/gt58wifixx/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
     device/samsung/gt58wifixx/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     device/samsung/gt58wifixx/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
-
-# GPS
-PRODUCT_COPY_FILES += \
-    device/samsung/gt58wifixx/configs/gps.conf:system/etc/gps.conf
-
-# Media
-PRODUCT_COPY_FILES += \
-    device/samsung/gt58wifixx/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    device/samsung/gt58wifixx/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Ril
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
