@@ -13,17 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Call this first so apn list is actually copied
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/apns.mk)
-
 # Product makefile
 $(call inherit-product, device/samsung/gt58wifixx/full_gt58wifixx.mk)
 
 # Inherit some common evervolv stuff.
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_tablet_wifionly.mk)
-
-# Pull all dictionaries
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/dictionaries/intl.mk)
 
 # Boot animation
 BOOT_ANIMATION_SIZE := xga
